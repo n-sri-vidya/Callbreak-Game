@@ -1,0 +1,27 @@
+ul {
+	height: 150px;
+	padding-inline-start: 0px;
+}
+
+ul > li {
+	list-style-type: none;
+}
+
+.gamePgbackgroundColor {
+	background-image: url('');
+	width: 100%;
+	height: 100%;
+  }
+.fright{
+	float: right;
+}
+
+.fcenter{
+	float: center;
+}
+.logoA23 {
+
+	float: left;
+	background-image: url('./assets/A23ylogo.png');
+	padding: 100px 110px;
+  }
