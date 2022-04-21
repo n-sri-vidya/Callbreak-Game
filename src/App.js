@@ -1,11 +1,15 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter, Switch, Route, NavLink } from 'react-router-dom';
+import { BrowserRouter, Switch, Route, NavLink,Routes } from 'react-router-dom';
 
 import axios from 'axios';
 
 import Login from './Login';
 import Dashboard from './Dashboard';
 import Home from './Home';
+import signUp from './components/signUp';
+import './components/Game.css';
+import Game from './components/Game';
+
 
 import PrivateRoute from './Utils/PrivateRoute';
 import PublicRoute from './Utils/PublicRoute';
@@ -34,7 +38,7 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <div className="App1">
       <BrowserRouter>
         <div>
           <div className="header">
@@ -45,10 +49,13 @@ function App() {
           <div className="content">
             <Switch>
               <Route exact path="/" component={Home} />
+              <Route path='/signUp' component={signUp} />
               <PublicRoute path="/login" component={Login} />
               <PrivateRoute path="/dashboard" component={Dashboard} />
+              <PrivateRoute path="/Game" component={Game} />
             </Switch>
           </div>
+        
         </div>
       </BrowserRouter>
     </div>

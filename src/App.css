@@ -1,6 +1,6 @@
 ul {
 	height: 150px;
-	padding-inline-start: 0px;
+	padding-inline-start: 100px;
 }
 
 ul > li {
@@ -24,4 +24,234 @@ ul > li {
 	float: left;
 	background-image: url('./assets/A23ylogo.png');
 	padding: 100px 110px;
+  }
+
+.player1Deck{
+
+}
+
+.App {
+	height: 60vh;
+	width: 100vw;
+	display: flex;
+	color:black;
+	padding: 120px 120px;
+  }
+  .App1 {
+	display: flex;
+	color:black;
+	width: 100%;
+
+  }
+  
+  .callbreakTitle{
+	height: 200px; width: 200px;
+	font-size: xx-large;
+			  background: silver;
+			  color: gold;
+			  padding: 10px;
+  }
+ 
+  
+  .appRight {
+	width: 50%;
+	background-color:whitesmoke;
+	padding: 25px 40px;
+	overflow: auto;
+  }
+  .TopButtons {
+	display: flex;
+	justify-content: flex-end;
+	margin-bottom: 10%;
+  }
+  
+  
+  .formCenter {
+	margin-bottom: 100px;
+	padding: 100px 100px;
+  }
+  
+  .formTitle {
+	color: #707c8b;
+	font-weight: 300;
+	margin-bottom: 50px;
+  }
+  
+  .formTitleLink {
+	color: #707c8b;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 1.7em;
+	margin: 0 10px;
+	padding-bottom: 5px;
+  }
+  
+  .formTitleLink:first-child {
+	margin-left: 0;
+  }
+  
+  .formTitleLink-active {
+	color: white;
+	border-bottom: 1px solid #6b5b95;
+  }
+  
+  .formField {
+	margin-bottom: 40px;
+  }
+  
+  .formFieldLabel {
+	display: block;
+	text-transform: uppercase;
+	font-size: 0.9em;
+	color: black;
+  }
+  .formFieldInput {
+	width: 85%;
+	background-color: transparent;
+	border: none;
+	color: black;
+	outline: none;
+	border-bottom: 1px solid #445366;
+	font-size: 1em;
+	font-weight: 300;
+	padding-bottom: 10px;
+	margin-top: 10px;
+  }
+  
+  .formFieldInput::placeholder {
+	color: #616e7f;
+  }
+  
+  .formFieldButton {
+	background-color: #6b5b95;
+	color: white;
+	border: none;
+	outline: none;
+	border-radius: 25px;
+	padding: 15px 70px;
+	font-size: 0.8em;
+	font-weight: 500;
+  }
+  
+  .formFieldLink {
+	color:darkblue;
+	text-decoration: none;
+	display: inline-block;
+	border-bottom: 1.5px solid #6b5b95;
+	padding-bottom: 5px;
+  }
+  
+  .formFieldCheckboxLabel {
+	color: #646f7d;
+	font-size: 0.9em;
+  }
+  
+  .formFieldCheckbox {
+	position: relative;
+	top: 1.5px;
+  }
+  
+  .formFieldTermsLink {
+	color: white;
+	border-bottom: 1px solid #6b5b95;
+	text-decoration: none;
+	display: inline-block;
+	padding-bottom: 2px;
+	margin-left: 5px;
+  }
+  
+  .floating {
+	  animation-name: floating;
+	  animation-duration: 3s;
+	  animation-iteration-count: infinite;
+	  animation-timing-function: ease-in-out;
+	  margin-left: 30px;
+	  margin-top: 5px;
+  }
+  
+  @keyframes floating {
+	  0% { transform: translate(0, 0px); }
+	  50% { transform: translate(0, 15px); }
+	  100% { transform: translate(0, -0px); }
+  }
+  
+  
+  .app {
+	font-family: sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 20px;
+
+	font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+	background-color: #f8f9fd;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+	height: 25px;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  
+  input[type="submit"] {
+	margin-top: 10px;
+	cursor: pointer;
+	font-size: 15px;
+	background: #01d28e;
+	border: 1px solid #01d28e;
+	color: #fff;
+	padding: 10px 20px;
+  }
+  
+  input[type="submit"]:hover {
+	background: #6cf0c2;
+  }
+  
+  .button-container {
+	display: flex;
+	justify-content: center;
+  }
+  
+  .login-form {
+	background-color: white;
+	padding: 2rem;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  .list-container {
+	display: flex;
+  }
+  
+  .error {
+	color: red;
+	font-size: 12px;
+  }
+  
+  .title {
+	font-size: 25px;
+	margin-bottom: 20px;
+  }
+  
+  .input-container {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	margin: 10px;
+  }
+
+  .card:hover {
+    transform: translateY(-1rem);
+}
+
+.card:hover~.card {
+    transform: translateX(130px);
+}
+
+.formFieldLink {
+	color:darkblue;
+	text-decoration: none;
+	display: inline-block;
+	border-bottom: 1.5px solid #6b5b95;
+	padding-bottom: 5px;
   }
